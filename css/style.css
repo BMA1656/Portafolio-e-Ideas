@@ -1,16 +1,35 @@
-
 /*              MENU                                           */
 
 body {
   margin: 1rem;
-  background: linear-gradient(43deg,
-      rgba(32, 32, 33, 1) 0%,
-      rgba(85, 30, 235, 1) 14%,
-      rgba(85, 30, 235, 1) 77%,
-      rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(
+    43deg,
+    rgba(32, 32, 33, 1) 0%,
+    rgba(85, 30, 235, 1) 14%,
+    rgba(85, 30, 235, 1) 77%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
-.info{
-    clip: rect(0 0 0 0);
+h1{
+font-size: 3.8rem;
+font-family: inter;
+}
+h2{
+  font-family: inter;
+  font-size: 2.3rem;
+}
+h3{
+  font-size: inter;
+  font-size: 2rem;
+}
+p {
+  font-family:kanit;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+
+.info {
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
@@ -18,18 +37,19 @@ body {
   white-space: nowrap;
   width: 1px;
 }
-header {
-  display: flex;
+.header {
+  display: inline-flex;
   background-color: #292929;
   margin: auto;
-  height: 12.5rem;
+  width: 100%;
+  height: auto;
   border-radius: 1rem;
 }
 
 .bm {
   width: 100%;
   height: auto;
-  max-width: 7.6rem;
+  max-width: 7rem;
   margin: 1rem;
 }
 
@@ -67,18 +87,6 @@ header {
 
 /*  index*/
 
-
-
-main h1 {
-  color: #ffffff;
-  font-family: kanit;
-}
-
-main p {
-  color: #ffffff;
-  font-family: inter;
-}
-
 .proyecto {
   height: auto;
   display: flex;
@@ -92,15 +100,11 @@ main p {
 }
 
 .proyecto h2 {
-  font-family: uchen;
-  font-size: 3rem;
+  color: white;
+  font-family: inter;
   margin: 2rem 3rem;
 }
 
-.proyecto p {
-  font-size: 2.4rem;
-  padding: 1rem;
-}
 
 .sho {
   background-color: #369c477a;
@@ -115,14 +119,12 @@ main p {
 }
 
 .sho h1 {
-  font-size: 3.5rem;
-  font-family: uchen;
   color: #000000;
   margin: 2rem 1rem;
 }
 
 .sho p {
-  font-size: 2.5rem;
+color: rgb(235, 213, 213);
 }
 
 .contenedor {
@@ -156,6 +158,7 @@ main p {
 }
 
 .dalio {
+  color:#ffffffc2;
   background-color: #0a142f;
   flex-basis: 29rem;
   margin: 1rem 2rem;
@@ -167,11 +170,10 @@ main p {
 }
 
 .dalio h3 {
-  font-size: 1.4rem;
   color: #d3c831;
 }
 
-.biccasindex {
+.biccas {
   background-color: #ffefef;
   flex-basis: 29rem;
   margin: 1rem;
@@ -182,12 +184,11 @@ main p {
   border-style: solid;
 }
 
-.biccasindex h3 {
+.biccas h3 {
   color: #54bd95;
-  font-size: 1.4rem;
 }
 
-.biccasindex p {
+.biccas p {
   color: #000000;
 }
 
@@ -203,7 +204,7 @@ main p {
   background-color: #ffffff;
 }
 
-/* curriculum */ 
+/* curriculum */
 
 .main-curriculum {
   margin: 1rem;
@@ -218,34 +219,25 @@ main p {
 }
 
 .main-curriculum h1 {
-  font-family: uchen;
-  font-size: 3.5rem;
-  margin:2rem 2rem -1.5rem 2rem;
+  margin: 2rem 2rem -1.5rem 2rem;
 }
 
 .main-curriculum h2 {
-  font-size: 3rem;
-  font-family: uchen;
   margin: 2rem 2rem;
 }
 
-.main-curriculum h3 {
-  font-size: 1.7rem;
-  font-family: uchen;
-}
-.main-curriculum h3::before{
-content: "\262D";
-margin: 0.3rem;
+.main-curriculum h3::before {
+  content: "\262D";
+  margin: 0.3rem;
 }
 
 .main-curriculum p {
-  font-size: 1.5rem;
+color: rgba(248, 213, 213, 0.829);
 }
-.main-curriculum p::before{
-content: "\2694";
-padding: 0.3rem;
+.main-curriculum p::before {
+  content: "\2694";
+  padding: 0.3rem;
 }
-
 
 /* Portafolio*/
 
@@ -253,14 +245,19 @@ padding: 0.3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: radial-gradient(circle, rgba(64, 0, 255, 1) 0%, rgba(198, 34, 34, 1) 49%, rgba(246, 250, 0, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(64, 0, 255, 1) 0%,
+    rgba(198, 34, 34, 1) 49%,
+    rgba(246, 250, 0, 1) 100%
+  );
   border-radius: 13rem;
   border-color: #ffffff;
   border-style: solid;
   padding: 2rem;
 }
 
-.titulo {
+.titulo-portafolio {
   margin: 1rem;
   padding: 1rem;
   background-color: #4739119c;
@@ -272,13 +269,13 @@ padding: 0.3rem;
   border-style: solid;
 }
 
-.titulo p {
-  font-size: 1.3rem;
+.titulo-portafolio p {
+  color: wheat;
 }
-
 
 .biccasportafolio {
   width: 26rem;
+  color: black;
   margin: 1rem 3rem;
   padding: 1rem;
   background-color: #ffefef;
@@ -332,7 +329,7 @@ padding: 0.3rem;
   width: 25rem;
   margin: 1rem 3rem;
   padding: 1rem;
-  background-color: #ffefef;
+  background-color: rgba(128, 128, 128, 0.815);
   border-radius: 3rem;
   border-color: #03030341;
   border-width: 0.23rem;
@@ -350,9 +347,6 @@ padding: 0.3rem;
   border-style: solid;
 }
 
-.cuchu h2 {
-  font-size: 2rem;
-}
 
 .cuchu h2::after {
   content: "\2122";
@@ -399,10 +393,9 @@ padding: 0.3rem;
   border-style: solid;
 }
 
-
 /*           Contacto    */
 
-.contenedorcontacto{
+.contenedorcontacto {
   display: flex;
 }
 .titulo {
@@ -412,21 +405,15 @@ padding: 0.3rem;
   border-radius: 1rem;
   border-bottom-left-radius: 3rem;
   border-top-right-radius: 3rem;
-
+  font-size: 2rem;
   border-color: #292929a5;
   border-style: solid;
 }
 
-h1 {
+.titulo h1 {
   color: #fffcfc;
-  font-size: 3.4rem;
-  font-family: uchen;
 }
 
-.titulo p {
-  font-size: 2.2rem;
-  font-family: kanit;
-}
 
 .face {
   background-color: #0011fcc2;
@@ -448,12 +435,10 @@ h1 {
 }
 
 .face h2 {
-  font-family: uchen;
   color: #c0c0c0;
 }
 .face p {
   color: #c0c0c0;
-  font-size: 2rem;
   margin-bottom: 2rem;
 }
 .face a {
@@ -495,7 +480,6 @@ h1 {
   border-width: 0.33rem;
 }
 .medium p {
-  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -537,7 +521,6 @@ h1 {
 }
 .insta p {
   margin-bottom: 2rem;
-  font-size: 2rem;
 }
 
 .git {
@@ -569,13 +552,10 @@ h1 {
 }
 .git p {
   margin-bottom: 2rem;
-  font-size: 2rem;
 }
 
 .formulario h2 {
   color: #d7c9c9;
-  font-family: uchen;
-  font-size: 3rem;
   margin: 2rem 1rem 2rem 2rem;
 }
 
@@ -648,7 +628,6 @@ h1 {
   width: 30rem;
 }
 
-
 /*                    footer*/
 
 footer {
@@ -661,11 +640,11 @@ footer {
   border-radius: 1rem;
 }
 
-footer p img {
-  width: 20rem;
-  height: 15rem;
-  margin: 2rem 15rem 1rem 1rem;
-  border-radius: 3rem;
+address {
+  display: inline-flex;
+  flex-direction: column;
+  width: 27%;
+  align-content: center;
 }
 
 .contenedor-foot {
@@ -676,35 +655,55 @@ footer p img {
 }
 
 .contenedor-foot h3 {
-  font-size: 2rem;
   color: #c0c0c0;
   margin-bottom: -1.5rem;
 }
 
 .contenedor-foot p {
-  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
 .lista-final {
   background-color: #bdb9b938;
   border-radius: 1rem;
+  width: 100%;
+  height: auto;
 }
 
 .lista-final li {
   display: inline;
+  padding: 1rem;
 }
 
 .face-foot {
-  width: 7.3rem;
-  margin: 1rem;
+  width: 12%;
+  padding: 1rem;
 }
 
 .inst-foot {
-  width: 11.3rem;
+  width: 17%;
+  height: auto;
 }
 
 .git-foot {
-  width: 7.3rem;
-  margin: 1rem;
+  width: 12%;
+  padding: 1rem;
+}
+
+@media (max-device-width: 960px) {
+  h1{ 
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3{
+    font-size: 0.9rem;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+  a{
+    font-size: 0.5rem;
+  }
 }
