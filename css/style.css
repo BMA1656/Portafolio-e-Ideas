@@ -9,21 +9,23 @@ body {
     rgba(85, 30, 235, 1) 77%,
     rgba(0, 0, 0, 1) 100%
   );
+  width: 100%;
+  height: auto;
 }
-h1{
-font-size: 3.8rem;
-font-family: inter;
+h1 {
+  font-size: 3.8rem;
+  font-family: inter;
 }
-h2{
+h2 {
   font-family: inter;
   font-size: 2.3rem;
 }
-h3{
+h3 {
   font-size: inter;
   font-size: 2rem;
 }
 p {
-  font-family:kanit;
+  font-family: kanit;
   font-size: 1.4rem;
   padding: 0.5rem;
 }
@@ -56,6 +58,8 @@ p {
 .navbar {
   margin: 2rem 5rem;
   padding: 1rem;
+  width: 100%;
+  height: auto;
 }
 
 .navbar li {
@@ -105,7 +109,6 @@ p {
   margin: 2rem 3rem;
 }
 
-
 .sho {
   background-color: #369c477a;
   padding: 1rem;
@@ -124,7 +127,7 @@ p {
 }
 
 .sho p {
-color: rgb(235, 213, 213);
+  color: rgb(235, 213, 213);
 }
 
 .contenedor {
@@ -158,7 +161,7 @@ color: rgb(235, 213, 213);
 }
 
 .dalio {
-  color:#ffffffc2;
+  color: #ffffffc2;
   background-color: #0a142f;
   flex-basis: 29rem;
   margin: 1rem 2rem;
@@ -232,7 +235,7 @@ color: rgb(235, 213, 213);
 }
 
 .main-curriculum p {
-color: rgba(248, 213, 213, 0.829);
+  color: rgba(248, 213, 213, 0.829);
 }
 .main-curriculum p::before {
   content: "\2694";
@@ -347,7 +350,6 @@ color: rgba(248, 213, 213, 0.829);
   border-style: solid;
 }
 
-
 .cuchu h2::after {
   content: "\2122";
 }
@@ -413,7 +415,6 @@ color: rgba(248, 213, 213, 0.829);
 .titulo h1 {
   color: #fffcfc;
 }
-
 
 .face {
   background-color: #0011fcc2;
@@ -627,6 +628,19 @@ color: rgba(248, 213, 213, 0.829);
   margin-left: 0.7rem;
   width: 30rem;
 }
+/*         pRUEBAS           */
+
+.pruebas__titulo{
+ text-align: center;
+ color: white;
+ font-size: 11rem;
+ width: 100%;
+ height: auto;
+}
+.pruebas__campo{
+  width: 100rem;
+  height: 100rem;
+}
 
 /*                    footer*/
 
@@ -691,19 +705,19 @@ address {
 }
 
 @media (max-device-width: 960px) {
-  h1{ 
+  h1 {
     font-size: 1.75rem;
   }
   h2 {
     font-size: 1.2rem;
   }
-  h3{
+  h3 {
     font-size: 0.9rem;
   }
-  p{
+  p {
     font-size: 0.9rem;
   }
-  a{
+  a {
     font-size: 0.5rem;
   }
 }
